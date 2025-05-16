@@ -30,7 +30,7 @@ class DuotecnoEntity(Entity):
             },
             manufacturer="Duotecno",
             name=unit.get_node_name(),
-        )
+        )        
         self._attr_unique_id = f"{self.entity_id}-{unit.get_node_address()}-{unit.get_number()}"
 
     async def async_added_to_hass(self) -> None:
